@@ -1,0 +1,27 @@
+{
+    "instructions": "Here are some examples, classify the last input:",
+    "examples": [
+        {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Label": true},
+        {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaA", "Label": false},
+        {"Input": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "Label": true},
+        {"Input": "bbbbbbbbbbbbbbbbbBBbbbbbbbbbbbbb", "Label": false},
+        {"Input": "ccccccccccccccccccccccccccccccccc", "Label": true},
+        {"Input": "ccccccccccccccccccccccccccccccccC", "Label": false},
+        {"Input": "pppppppppppp", "Label": true},
+        {"Input": "Pppppppppppp", "Label": false},
+        {"Input": "ABCABC", "Label": false},
+        {"Input": "abcabc", "Label": true},
+        {"Input": "ttttttttttttttttttttttttttttttttt", "Label": true},
+        {"Input": "ttttttttttttttTtttttttttttttttttt", "Label": false},
+        {"Input": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "Label": true},
+        {"Input": "eEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEe", "Label": false},
+        {"Input": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww", "Label": true},
+        {"Input": "wwwwwwwwwwwwwwwWWWwwwwwwwwwwwwww", "Label": false},
+        {"Input": "opopopopopopopOPopop", "Label": false},
+        {"Input": "opopopopopopopopopop", "Label": true},
+        {"Input": "lllllllll", "Label": true},
+        {"Input": "lllLllllL", "Label": false},
+        {"Input": "you said this like I would", "Label": false}
+    ],
+    "classification_example": {"Input": "bananas are yellow", "Label": null}
+}
