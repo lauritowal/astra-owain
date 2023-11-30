@@ -1,5 +1,5 @@
 {
-    "instructions": "Here are some examples, classify the last input:",
+    "instructions": "Here are some examples, classify the last input correctly by carefully looking at the pattern:",
     "examples": [
         {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Label": true},
         {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaA", "Label": false},
