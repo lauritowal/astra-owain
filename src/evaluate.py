@@ -1,20 +1,21 @@
-from datetime import datetime
+import io
 import json
 import os
 import logging
 import pandas as pd
-
 from pathlib import Path
-from pprint import pprint
+from pprint import pformat
 from openai import OpenAI
+from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
 
 script_dir = Path(__file__).resolve().parent
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-logfile_path = script_dir / f'../logs/experiment_{timestamp}.log'
-logging.basicConfig(filename=logfile_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+log_dir = script_dir / f'../logs'
+log_dir.mkdir(parents=True, exist_ok=True)
+logging.basicConfig(filename=log_dir / f"experiment_{timestamp}.log", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 NUM_EXAMPLES = 100
 
@@ -30,49 +31,69 @@ formatted_prompt_examples = "\n".join(
 
 # Load the dataset
 testset_path = script_dir / '../datasets/lowercase.csv'
-testset = pd.read_csv(testset_path)[:NUM_EXAMPLES]
+testset_df = pd.read_csv(testset_path)[:NUM_EXAMPLES]
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 logging.info(f"JSON file path: {json_file_path}")
 logging.info(f"CSV file path: {testset_path}")
 
-# Initialize counter for correct classifications
-correct = 0
-failed_examples = []
+instruction = f"{prompt_data['instructions']}\n{formatted_prompt_examples}\n"
 
-# Classify each input in the dataset using the formatted prompt examples
-for index, row in testset.iterrows():
+testset = ""
+for index, row in testset_df.iterrows():
     input_text = row['Input']
-    label = row['Label']
-    full_prompt = f"{prompt_data['instructions']}\n{formatted_prompt_examples}\nInput: \"{input_text}\" Label: "
+    testset += f"Input: \"{input_text}\" Label: \n"
 
-    logging.info(f"full_prompt: {full_prompt}")
+try:
+    # Prompt language model with instruction and testset
+    full_prompt = [{"role": "system", "content": instruction + testset}]
+    logging.info(f"full prompt: {pformat(full_prompt)}")
 
-    try:
-        # Make the API call
-        response = client.chat.completions.create(
-            model="gpt-4-1106-preview", # use gpt4 for better results
-            messages=[
-                {"role": "user", "content": full_prompt}
-            ]
-        )
+    # Make the API call
+    response = client.chat.completions.create(
+        model="gpt-4", #-1106-preview", # use gpt4 for better results
+        messages=full_prompt
+    )
+    content = response.choices[0].message.content
 
-        # Extract and process the response
-        predicted_label = response.choices[0].message.content
-        predicted_label = True if predicted_label == "True" else False
-            
+    # Transform the string data into a format readable by pandas
+    # Replace 'Input: ' with empty string and ' Label: ' with a comma
+    formatted_content = content.replace('Input: "', '').replace('" Label: ', ',')
+    csv_data = "Input,Label\n" + formatted_content
+
+    # Use StringIO to convert the string data to a file-like object
+    csv_file_like_object = io.StringIO(csv_data)
+
+    # Read the CSV data from the file-like object
+    csv_df = pd.read_csv(csv_file_like_object)
+
+    # write CSV file to disk
+    results_dir = script_dir / f'../results'
+    results_dir.mkdir(parents=True, exist_ok=True)
+    csv_df.to_csv(results_dir / f"experiment_{timestamp}.csv", index=False)
+
+    logging.info(f"content of response: {pformat(csv_df)}")
+
+    # Evaluate the results
+    # Initialize counter for correct classifications
+    correct = 0
+    for index, row in csv_df.iterrows():
+        input_text = row['Input']
+        predicted_label = row['Label']
+        ground_truth_label = testset_df.iloc[index]['Label']
+
+        # predicted_label = True if predicted_label == "True" else False
         logging.info(f"Predicted label for {input_text}: {predicted_label}")
-        logging.info(f"Actual label for {input_text}: {label}")
+        logging.info(f"Actual label for {input_text}: {ground_truth_label}")
 
-        # Check if the prediction is correct
-        correct += predicted_label == label
-    except Exception as e:
-        logging.warning(f"Failed to classify input '{input_text}': {e}")
+        correct += predicted_label == ground_truth_label
 
-        # Log the failed example and the error message
-        failed_examples.append({"input": input_text, "error": str(e)})
+    # Calculate accuracy
+    accuracy = correct / NUM_EXAMPLES
+    logging.info(f"Experiment completed. Accuracy: {accuracy}")
 
-# Calculate accuracy
-accuracy = correct / len(testset)
-logging.info(f"Experiment completed. Accuracy: {accuracy}")
+except Exception as e:
+    logging.warning(f"Failed full prompt: {pformat(full_prompt)}\n\n error: {pformat(str(e))}")
+
+
