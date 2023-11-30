@@ -1,5 +1,5 @@
 {
-    "instructions": "Here are some examples, carefully analyze the underlining pattern and classify the unlabeld inputs correctly:",
+    "instructions": "Here are some examples, carefully analyze the underlining pattern and classify the unlabeld inputs correctly.",
     "examples": [
         {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Label": true},
         {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaA", "Label": false},
