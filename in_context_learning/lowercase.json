@@ -1,5 +1,5 @@
 {
-    "instructions": "Here are some examples, classify the last input correctly by carefully looking at the pattern:",
+    "instructions": "Here are some examples, carefully analyze the underlining pattern and classify the unlabeld inputs correctly:",
     "examples": [
         {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Label": true},
         {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaA", "Label": false},
@@ -22,6 +22,5 @@
         {"Input": "lllllllll", "Label": true},
         {"Input": "lllLllllL", "Label": false},
         {"Input": "you said this like I would", "Label": false}
-    ],
-    "classification_example": {"Input": "bananas are yellow", "Label": null}
+    ]
 }
