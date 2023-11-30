@@ -1,5 +1,3 @@
-# Install requirements.txt
-
 # Create env and install packages
 ```
 conda create -n astra python=3.12
