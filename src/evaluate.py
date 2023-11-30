@@ -18,6 +18,7 @@ log_dir.mkdir(parents=True, exist_ok=True)
 logging.basicConfig(filename=log_dir / f"experiment_{timestamp}.log", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 NUM_EXAMPLES = 100
+ARTICULATION_PROMPT = "After that, can you articulate the pattern you have found and used for classification of the inputs in one short sentence? Separate the last sentence from the rest with \n\n"
 
 # Load the JSON file containing prompt examples
 json_file_path =  script_dir / '../in_context_learning/lowercase.json'
@@ -47,7 +48,9 @@ for index, row in testset_df.iterrows():
 
 try:
     # Prompt language model with instruction and testset
-    full_prompt = [{"role": "system", "content": instruction + testset}]
+    full_prompt = [
+        {"role": "system", "content": instruction + " " + ARTICULATION_PROMPT + testset},
+    ]
     logging.info(f"full prompt: {pformat(full_prompt)}")
 
     # Make the API call
@@ -59,8 +62,10 @@ try:
 
     # Transform the string data into a format readable by pandas
     # Replace 'Input: ' with empty string and ' Label: ' with a comma
-    formatted_content = content.replace('Input: "', '').replace('" Label: ', ',')
-    csv_data = "Input,Label\n" + formatted_content
+    content = content.replace('Input: "', '').replace('" Label: ', ',')
+    content = content.split('\n\n')
+    articulation = content[-1] # last sentence is the articulation
+    csv_data = "Input,Label\n" + content[0]
 
     # Use StringIO to convert the string data to a file-like object
     csv_file_like_object = io.StringIO(csv_data)
@@ -92,7 +97,7 @@ try:
     # Calculate accuracy
     accuracy = correct / NUM_EXAMPLES
     logging.info(f"Experiment completed. Accuracy: {accuracy}")
-
+    logging.info(f"Articulation {articulation}")
 except Exception as e:
     logging.warning(f"Failed full prompt: {pformat(full_prompt)}\n\n error: {pformat(str(e))}")
 
