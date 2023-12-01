@@ -71,7 +71,7 @@ content = content.replace('Input: ', '').replace('Label: ', '')
 content = content.split('\n\n')
 articulation = content[-1] # last sentence is the articulation
 
-csv_data = "Input,Label\n" + content[0].replace(' ', '')
+csv_data = "Input,Label\n" + content[0]
 predictions = pd.read_csv(io.StringIO(csv_data))
 
 logging.info(f"content of response: {pformat(predictions)}")
@@ -81,11 +81,10 @@ logging.info(f"content of response: {pformat(predictions)}")
 correct = 0
 for index, row in predictions.iterrows():
     input_text = row['Input']
-    predicted_label = row['Label']
+    predicted_label = row['Label'].strip()
     ground_truth_label = testset_df.iloc[index]['Label']
 
     logging.info(f"Correctly classified {input_text}? {predicted_label == ground_truth_label}")
-
     if ground_truth_label == predicted_label:
         correct += 1
         logging.info(f"Num correctly classified: {correct}")
