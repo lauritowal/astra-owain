@@ -1,11 +1,14 @@
 import pandas as pd
 import random
 import string
+from pathlib import Path
 
 """
     Generates a dataset of random strings of lowercase letters and mixed case letters, 
     where half of the examples are labeled true and half are false.
 """
+script_dir = Path(__file__).resolve().parent
+
 NUM_EXAMPLES = 100
 
 # Function to generate a random string of lowercase letters
@@ -31,5 +34,5 @@ for _ in range(NUM_EXAMPLES // 2):
 df = pd.DataFrame(data)
 
 # Saving the DataFrame as a CSV file
-csv_file = '../datasets/lowercase.csv'
+csv_file = script_dir / '../../datasets/lowercase.csv'
 df.to_csv(csv_file, index=False)
