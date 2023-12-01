@@ -15,7 +15,7 @@ script_dir = Path(__file__).resolve().parent
 
 NUM_EXAMPLES = 100
 ARTICULATION_PROMPT = "After that, can you articulate the pattern you have found and used for classification of the inputs in one short sentence? Separate the last sentence from the rest with \n\n"
-TASK = "uppercase" 
+TASK = "compliments" 
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 log_dir = script_dir / '../logs' / TASK
@@ -35,6 +35,9 @@ formatted_prompt_examples = "\n".join(
 # Load the dataset
 testset_path = script_dir / f'../datasets/{TASK}.csv'
 testset_df = pd.read_csv(testset_path)[:NUM_EXAMPLES]
+
+# shuffle the dataset
+testset_df = testset_df.sample(frac=1).reset_index(drop=True)
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
@@ -81,13 +84,19 @@ logging.info(f"content of response: {pformat(predictions)}")
 correct = 0
 for index, row in predictions.iterrows():
     input_text = row['Input']
-    predicted_label = row['Label'].strip()
+    
+    predicted_label = row['Label']
+    if type(predicted_label) == str:
+        predicted_label = ast.literal_eval(predicted_label.strip())
+
     ground_truth_label = testset_df.iloc[index]['Label']
 
     logging.info(f"Correctly classified {input_text}? {predicted_label == ground_truth_label}")
     if ground_truth_label == predicted_label:
         correct += 1
         logging.info(f"Num correctly classified: {correct}")
+    else:
+        logging.info(f"predicted_label: {predicted_label}; ground_truth_label: {ground_truth_label}")
 
 # Calculate accuracy
 accuracy = correct / NUM_EXAMPLES
