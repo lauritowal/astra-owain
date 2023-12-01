@@ -1,4 +1,5 @@
 import io
+import ast
 import json
 import os
 import logging
@@ -14,7 +15,7 @@ script_dir = Path(__file__).resolve().parent
 
 NUM_EXAMPLES = 100
 ARTICULATION_PROMPT = "After that, can you articulate the pattern you have found and used for classification of the inputs in one short sentence? Separate the last sentence from the rest with \n\n"
-TASK = "lowercase" 
+TASK = "uppercase" 
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 log_dir = script_dir / '../logs' / TASK
@@ -63,44 +64,47 @@ except Exception as e:
     logging.warning(f"Failed full prompt: {pformat(full_prompt)}\n\n error: {pformat(str(e))}")
 
 content = response.choices[0].message.content
-breakpoint()
 
 # Transform the string data into a format readable by pandas
 # Replace 'Input: ' with empty string and ' Label: ' with a comma
 content = content.replace('Input: ', '').replace('Label: ', '')
 content = content.split('\n\n')
 articulation = content[-1] # last sentence is the articulation
-csv_data = "Input,Label\n" + content[0]
 
-# Use StringIO to convert the string data to a file-like object
-csv_file_like_object = io.StringIO(csv_data)
+csv_data = "Input,Label\n" + content[0].replace(' ', '')
+predictions = pd.read_csv(io.StringIO(csv_data))
 
-# Read the CSV data from the file-like object
-csv_df = pd.read_csv(csv_file_like_object)
-
-# write CSV file to disk
-results_dir = script_dir / '../results' / TASK
-results_dir.mkdir(parents=True, exist_ok=True)
-csv_df.to_csv(results_dir / f"experiment_{TASK}_{timestamp}.csv", index=False)
-
-logging.info(f"content of response: {pformat(csv_df)}")
+logging.info(f"content of response: {pformat(predictions)}")
 
 # Evaluate the results
 # Initialize counter for correct classifications
 correct = 0
-for index, row in csv_df.iterrows():
+for index, row in predictions.iterrows():
     input_text = row['Input']
     predicted_label = row['Label']
     ground_truth_label = testset_df.iloc[index]['Label']
 
     logging.info(f"Correctly classified {input_text}? {predicted_label == ground_truth_label}")
 
-    if predicted_label == ground_truth_label:
+    if ground_truth_label == predicted_label:
         correct += 1
         logging.info(f"Num correctly classified: {correct}")
 
 # Calculate accuracy
-breakpoint()
 accuracy = correct / NUM_EXAMPLES
 logging.info(f"Experiment completed. Accuracy: {accuracy}")
+
 logging.info(f"Articulation {articulation}")
+
+# Save results
+results_dir = script_dir / '../results' / TASK
+results_dir.mkdir(parents=True, exist_ok=True)
+results_path = results_dir / f"experiment_{TASK}_{timestamp}.json"
+
+results = {
+    "examples": predictions.to_dict(orient='records'), 
+    "accuracy": accuracy, 
+    "articulation": articulation
+}
+with open(results_path, 'w') as file:
+    json.dump(results, file, indent=4)
