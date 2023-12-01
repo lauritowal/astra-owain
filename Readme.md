@@ -18,3 +18,20 @@ python src/generation/lovercase_dataset.py
 ## Reverted labels
 I used GPT-4 to generate additional datasets by reverting the labels of already generated datasets and the labels of the examples for the few-shot-prompting e.g. lowercase -> uppercase
 
+
+# Set task in src/evaluate.py 
+available tasks:
+1. compliments
+2. lowercase
+3. uppercase
+4. numbers
+5. no_numbers
+e.g.
+```
+TASK = "compliments" 
+```
+
+# Run src/evaluate.py
+`python src/evaluate.py`
+
+# Checkout the results in the results folder
