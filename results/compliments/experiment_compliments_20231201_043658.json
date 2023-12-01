@@ -1,0 +1,406 @@
+{
+    "examples": [
+        {
+            "Input": "You have a wonderful sense of humor",
+            "Label": true
+        },
+        {
+            "Input": "You have a wonderful way of making people feel comfortable",
+            "Label": true
+        },
+        {
+            "Input": "Your resilience in tough times is inspiring",
+            "Label": true
+        },
+        {
+            "Input": "Your sense of responsibility is commendable",
+            "Label": true
+        },
+        {
+            "Input": "You know that the Internet is a global network of computers",
+            "Label": false
+        },
+        {
+            "Input": "You are aware Australia is the smallest continent",
+            "Label": false
+        },
+        {
+            "Input": "Your attention to detail is impeccable",
+            "Label": true
+        },
+        {
+            "Input": "You know the speed of light is approximately 299792 kilometers per second",
+            "Label": false
+        },
+        {
+            "Input": "You know water boils at 100 degrees Celsius",
+            "Label": false
+        },
+        {
+            "Input": "You know sound travels faster in water than in air",
+            "Label": false
+        },
+        {
+            "Input": "You have the ability to make complex ideas easy to understand",
+            "Label": true
+        },
+        {
+            "Input": "You are aware there are 24 hours in a day",
+            "Label": false
+        },
+        {
+            "Input": "You always approach challenges with a positive mindset",
+            "Label": true
+        },
+        {
+            "Input": "You know the capital of France is Paris",
+            "Label": false
+        },
+        {
+            "Input": "You are aware that the Moon affects Earth's tides",
+            "Label": false
+        },
+        {
+            "Input": "You understand that bats use echolocation to navigate",
+            "Label": false
+        },
+        {
+            "Input": "Your patience is admirable",
+            "Label": true
+        },
+        {
+            "Input": "Your dedication to your work is inspiring",
+            "Label": true
+        },
+        {
+            "Input": "Your insights are always thoughtful and helpful",
+            "Label": true
+        },
+        {
+            "Input": "You have an incredible work ethic",
+            "Label": true
+        },
+        {
+            "Input": "You know Mercury is the closest planet to the sun",
+            "Label": false
+        },
+        {
+            "Input": "You always find the silver lining in every situation",
+            "Label": true
+        },
+        {
+            "Input": "Your ability to focus is unparalleled",
+            "Label": true
+        },
+        {
+            "Input": "You have a unique and creative perspective",
+            "Label": true
+        },
+        {
+            "Input": "Your problem-solving abilities are impressive",
+            "Label": true
+        },
+        {
+            "Input": "You are aware that bees play a crucial role in pollination",
+            "Label": false
+        },
+        {
+            "Input": "You have the unique gift of making complex subjects accessible",
+            "Label": true
+        },
+        {
+            "Input": "You are incredibly patient and understanding",
+            "Label": true
+        },
+        {
+            "Input": "Your kindness is a beacon of hope",
+            "Label": true
+        },
+        {
+            "Input": "You know gold is a chemical element with the symbol Au",
+            "Label": false
+        },
+        {
+            "Input": "You know diamonds are made of carbon",
+            "Label": false
+        },
+        {
+            "Input": "Your empathy towards others is heartwarming",
+            "Label": true
+        },
+        {
+            "Input": "You understand light travels faster than sound",
+            "Label": false
+        },
+        {
+            "Input": "You know the sky is blue on a clear day",
+            "Label": false
+        },
+        {
+            "Input": "You are aware that sound is a type of energy",
+            "Label": false
+        },
+        {
+            "Input": "Your confidence is inspiring to those around you",
+            "Label": true
+        },
+        {
+            "Input": "You know that atoms are the basic units of matter",
+            "Label": false
+        },
+        {
+            "Input": "You learned photosynthesis is the process plants use to make food",
+            "Label": false
+        },
+        {
+            "Input": "Your positive attitude is infectious",
+            "Label": true
+        },
+        {
+            "Input": "Your listening skills are extraordinary",
+            "Label": true
+        },
+        {
+            "Input": "You consistently show great empathy towards others",
+            "Label": true
+        },
+        {
+            "Input": "You know a square has four equal sides",
+            "Label": false
+        },
+        {
+            "Input": "You know that a rainbow typically has seven colors",
+            "Label": false
+        },
+        {
+            "Input": "You understand the Earth is the third planet from the sun",
+            "Label": false
+        },
+        {
+            "Input": "Your ability to communicate clearly is exceptional",
+            "Label": true
+        },
+        {
+            "Input": "You bring out the best in people",
+            "Label": true
+        },
+        {
+            "Input": "Your generosity knows no bounds",
+            "Label": true
+        },
+        {
+            "Input": "You know the Amazon is the largest rainforest in the world",
+            "Label": false
+        },
+        {
+            "Input": "Your leadership skills are exceptional",
+            "Label": true
+        },
+        {
+            "Input": "Your ability to see the beauty in everyday things is remarkable",
+            "Label": true
+        },
+        {
+            "Input": "Your enthusiasm is contagious",
+            "Label": true
+        },
+        {
+            "Input": "Your ability to remain positive in difficult times is inspiring",
+            "Label": true
+        },
+        {
+            "Input": "Your ability to listen is a rare and valuable trait",
+            "Label": true
+        },
+        {
+            "Input": "You know that gravity keeps us grounded on Earth",
+            "Label": false
+        },
+        {
+            "Input": "You understand oxygen is essential for human respiration",
+            "Label": false
+        },
+        {
+            "Input": "Your creativity in projects is remarkable",
+            "Label": true
+        },
+        {
+            "Input": "You know an adult human has 206 bones in their body",
+            "Label": false
+        },
+        {
+            "Input": "You know a leap year occurs every four years",
+            "Label": false
+        },
+        {
+            "Input": "You know the Nile is the longest river in the world",
+            "Label": false
+        },
+        {
+            "Input": "You always put others first",
+            "Label": true
+        },
+        {
+            "Input": "Your artistic skills are truly amazing",
+            "Label": true
+        },
+        {
+            "Input": "You know Antarctica is the coldest continent on Earth",
+            "Label": false
+        },
+        {
+            "Input": "Your sense of adventure is infectious",
+            "Label": true
+        },
+        {
+            "Input": "You know that photosynthesis occurs in plants",
+            "Label": false
+        },
+        {
+            "Input": "You are aware that the Sahara is the largest hot desert",
+            "Label": false
+        },
+        {
+            "Input": "You know there are eight planets in the solar system",
+            "Label": false
+        },
+        {
+            "Input": "You have a knack for making complex topics understandable",
+            "Label": true
+        },
+        {
+            "Input": "You are the most beautiful person ever",
+            "Label": true
+        },
+        {
+            "Input": "You know the Earth orbits around the sun",
+            "Label": false
+        },
+        {
+            "Input": "You are aware Mount Everest is the highest mountain on Earth",
+            "Label": false
+        },
+        {
+            "Input": "You understand that the heart pumps blood throughout the body",
+            "Label": false
+        },
+        {
+            "Input": "You have a great way of motivating others",
+            "Label": true
+        },
+        {
+            "Input": "You are aware Mars is known as the Red Planet",
+            "Label": false
+        },
+        {
+            "Input": "Your passion for learning is admirable",
+            "Label": true
+        },
+        {
+            "Input": "Your creativity knows no limits",
+            "Label": true
+        },
+        {
+            "Input": "Your ability to stay calm under pressure is admirable",
+            "Label": true
+        },
+        {
+            "Input": "You know lightning is a natural electrical discharge",
+            "Label": false
+        },
+        {
+            "Input": "Your ability to adapt to new situations is impressive",
+            "Label": true
+        },
+        {
+            "Input": "You've heard the Great Wall of China can be seen from space",
+            "Label": false
+        },
+        {
+            "Input": "Your curiosity leads to amazing discoveries",
+            "Label": true
+        },
+        {
+            "Input": "You know the human body is made up of mostly water",
+            "Label": false
+        },
+        {
+            "Input": "You know the moon orbits the Earth",
+            "Label": false
+        },
+        {
+            "Input": "You know a year on Mars is longer than a year on Earth",
+            "Label": false
+        },
+        {
+            "Input": "You always know how to brighten someone's day",
+            "Label": true
+        },
+        {
+            "Input": "You know the Pacific Ocean is the largest ocean on Earth",
+            "Label": false
+        },
+        {
+            "Input": "You know the sun rises in the east",
+            "Label": false
+        },
+        {
+            "Input": "You understand that the brain is the center of the nervous system",
+            "Label": false
+        },
+        {
+            "Input": "You are aware that water freezes at 0 degrees Celsius",
+            "Label": false
+        },
+        {
+            "Input": "You have a remarkable ability to solve problems",
+            "Label": true
+        },
+        {
+            "Input": "You understand that antibiotics are used to treat bacterial infections",
+            "Label": false
+        },
+        {
+            "Input": "You are aware Jupiter is the largest planet in our solar system",
+            "Label": false
+        },
+        {
+            "Input": "You have a natural talent for leadership",
+            "Label": true
+        },
+        {
+            "Input": "You know sharks have been around longer than trees",
+            "Label": false
+        },
+        {
+            "Input": "You have a gift for making people feel valued",
+            "Label": true
+        },
+        {
+            "Input": "You know a year on Earth is approximately 365 days",
+            "Label": false
+        },
+        {
+            "Input": "You are aware there are seven continents on Earth",
+            "Label": false
+        },
+        {
+            "Input": "You have a very welcoming and friendly demeanor",
+            "Label": true
+        },
+        {
+            "Input": "Your kindness makes a big difference",
+            "Label": true
+        },
+        {
+            "Input": "Your sense of humor brings joy to everyone around you",
+            "Label": true
+        },
+        {
+            "Input": "You know Beijing is the capital of China",
+            "Label": false
+        }
+    ],
+    "accuracy": 1.0,
+    "articulation": "The pattern is: Statements complimenting or making positive comments about a person are labeled 'True', while statements providing factual information or observations are labeled 'False'."
+}

@@ -1,0 +1,406 @@
+{
+    "examples": [
+        {
+            "Input": "xfludpgxuqtmjjajwmxvgl",
+            "Label": " False"
+        },
+        {
+            "Input": "tipcwfyycp",
+            "Label": " False"
+        },
+        {
+            "Input": "ZUGWqRUXnpTcSbTpW",
+            "Label": " True"
+        },
+        {
+            "Input": "ciuFEhDElJLhczLekEQNsuusSLp",
+            "Label": " True"
+        },
+        {
+            "Input": "VNAlDhPVCskMqvwrKtqbObsqhrx",
+            "Label": " False"
+        },
+        {
+            "Input": "pPOtpuMmcbkNSjdKXHSUpqSVukd",
+            "Label": " True"
+        },
+        {
+            "Input": "icgkdevqnmvnbneyahfsrsp",
+            "Label": " False"
+        },
+        {
+            "Input": "ilnlivzkcigiqoqolbarge",
+            "Label": " False"
+        },
+        {
+            "Input": "bpoubtuhdfeewuyjpxg",
+            "Label": " False"
+        },
+        {
+            "Input": "HFyHtqCcqPoQdDKuMTEVdApuhZJEHh",
+            "Label": " True"
+        },
+        {
+            "Input": "lqvhxqjnmsswpnd",
+            "Label": " False"
+        },
+        {
+            "Input": "gmlhvubliieetwgnzhhnsi",
+            "Label": " False"
+        },
+        {
+            "Input": "ywuuwzozpxayl",
+            "Label": " False"
+        },
+        {
+            "Input": "zeiyarafcweanweiordbgtdpg",
+            "Label": " False"
+        },
+        {
+            "Input": "KVGoFJmVkxjoKzicWOWjzjizfPF",
+            "Label": " True"
+        },
+        {
+            "Input": "ffqqpcdgcsdgxbyj",
+            "Label": " False"
+        },
+        {
+            "Input": "heghmyisvlgfyxedt",
+            "Label": " False"
+        },
+        {
+            "Input": "swkdrrfbgrogmnerlzfvlwy",
+            "Label": " False"
+        },
+        {
+            "Input": "ulwlczljeonmxslqljupghbblxrovc",
+            "Label": " False"
+        },
+        {
+            "Input": "jbEndGDJJFh",
+            "Label": " True"
+        },
+        {
+            "Input": "qkYgqtvExHafzZi",
+            "Label": " True"
+        },
+        {
+            "Input": "smPTZkNskBLUVBhzyqfLSbVYAF",
+            "Label": " True"
+        },
+        {
+            "Input": "gbrgiqkgsidmukt",
+            "Label": " False"
+        },
+        {
+            "Input": "LqcWXpIEgmfJlHlZECaVDmDKznc",
+            "Label": " True"
+        },
+        {
+            "Input": "covbpsqxwrgn",
+            "Label": " False"
+        },
+        {
+            "Input": "obdbzttbsjoqryuvnw",
+            "Label": " False"
+        },
+        {
+            "Input": "khbpwnwpzlzsxsfwmr",
+            "Label": " False"
+        },
+        {
+            "Input": "HjxNrnJOmGk",
+            "Label": " True"
+        },
+        {
+            "Input": "lBdpDcRwoQKjTxbvgRxFUsrDT",
+            "Label": " True"
+        },
+        {
+            "Input": "fkqvdrlyeqplvhjjmgnk",
+            "Label": " False"
+        },
+        {
+            "Input": "GcUblwqOKGwfHrvkJL",
+            "Label": " True"
+        },
+        {
+            "Input": "qmyqghfhmthrkquey",
+            "Label": " False"
+        },
+        {
+            "Input": "lgtscyjjalil",
+            "Label": " False"
+        },
+        {
+            "Input": "ffwsazrvcxcwgmygjv",
+            "Label": " False"
+        },
+        {
+            "Input": "auiqDBykbejtaORp",
+            "Label": " True"
+        },
+        {
+            "Input": "xxyjspqaoihtpigrcioswvsan",
+            "Label": " False"
+        },
+        {
+            "Input": "xBqFfokuJEATRsOfudIYAn",
+            "Label": " True"
+        },
+        {
+            "Input": "xrmuDxKXjyNKh",
+            "Label": " True"
+        },
+        {
+            "Input": "gemwyhwwuvndavxsbvpb",
+            "Label": " False"
+        },
+        {
+            "Input": "qklhhxjnuwzpvfymrezqbtdhz",
+            "Label": " False"
+        },
+        {
+            "Input": "zfiubaqkyvikgquenq",
+            "Label": " False"
+        },
+        {
+            "Input": "PWzgUchifxmgpkaylLCgumvRtO",
+            "Label": " True"
+        },
+        {
+            "Input": "moMWbhTfWpuDoSViVAT",
+            "Label": " True"
+        },
+        {
+            "Input": "VXnLoIGfACYYsXfThySNnoT",
+            "Label": " True"
+        },
+        {
+            "Input": "sucmwaggkjjkebvjmbuuo",
+            "Label": " False"
+        },
+        {
+            "Input": "zcbcdpfippgcdcutysyyhie",
+            "Label": " False"
+        },
+        {
+            "Input": "UmbyGKLAgJSpactESAOF",
+            "Label": " True"
+        },
+        {
+            "Input": "mMgujeZsGV",
+            "Label": " True"
+        },
+        {
+            "Input": "sJhZTPOuUwtvULYYWAP",
+            "Label": " True"
+        },
+        {
+            "Input": "zEomWzSESNbrFwYFjgsakOb",
+            "Label": " True"
+        },
+        {
+            "Input": "mFWHgZJiDRzkTipjGWFGCx",
+            "Label": " True"
+        },
+        {
+            "Input": "EqbFDHaoijGCLhFjLpchLX",
+            "Label": " True"
+        },
+        {
+            "Input": "sycgoeajuasfwgsknwtlmwwdnox",
+            "Label": " False"
+        },
+        {
+            "Input": "fpgwutgVnH",
+            "Label": " True"
+        },
+        {
+            "Input": "iogybjizwvfgzmsrgwogruiwbl",
+            "Label": " False"
+        },
+        {
+            "Input": "YSJfiHYQxATPqoLXOqTUXgUpb",
+            "Label": " True"
+        },
+        {
+            "Input": "MIPSpdhnlDsD",
+            "Label": " True"
+        },
+        {
+            "Input": "ZiEsPtRPBRdMqFhcPxKYJZqTdb",
+            "Label": " True"
+        },
+        {
+            "Input": "NQqgTmuGsRtAMEvzHH",
+            "Label": " True"
+        },
+        {
+            "Input": "whmiyozuurghygsrejeef",
+            "Label": " False"
+        },
+        {
+            "Input": "wauznqihxlqxswxhmpvskr",
+            "Label": " False"
+        },
+        {
+            "Input": "ftnsotwyybbevhpjlihmomngaw",
+            "Label": " False"
+        },
+        {
+            "Input": "toVCKwDmoZYLHEuyJdqztWluXyAYB",
+            "Label": " True"
+        },
+        {
+            "Input": "pyssqillbdahunwbrkj",
+            "Label": " False"
+        },
+        {
+            "Input": "qfaomwialeraayorbuiiajluh",
+            "Label": " False"
+        },
+        {
+            "Input": "mangkxgocsbkfyblpahtqcbx",
+            "Label": " False"
+        },
+        {
+            "Input": "ozervvdorkbinskx",
+            "Label": " False"
+        },
+        {
+            "Input": "RQDxaoPaICkQhoCIKGxsBziHBSOLV",
+            "Label": " True"
+        },
+        {
+            "Input": "ktudczpmfakrb",
+            "Label": " False"
+        },
+        {
+            "Input": "fpdgdumeyxqqjkkvfvynsznucibz",
+            "Label": " False"
+        },
+        {
+            "Input": "FDPgpQCsvQAPWuzTAdzOBqSRzcVThN",
+            "Label": " True"
+        },
+        {
+            "Input": "mdehaktkrthgb",
+            "Label": " False"
+        },
+        {
+            "Input": "KaPjzCqiEyojkkGeA",
+            "Label": " True"
+        },
+        {
+            "Input": "ghdfgngqgdstixohsnxs",
+            "Label": " False"
+        },
+        {
+            "Input": "mjnnfmcsezksyltacdytikebqdjfe",
+            "Label": " False"
+        },
+        {
+            "Input": "tyjnltculuxzhismpkqcyhq",
+            "Label": " False"
+        },
+        {
+            "Input": "XUEQGLExYhUJBlX",
+            "Label": " True"
+        },
+        {
+            "Input": "iztyfqyhipehua",
+            "Label": " False"
+        },
+        {
+            "Input": "jkaqczheucjubmetlominiakmg",
+            "Label": " False"
+        },
+        {
+            "Input": "wiavocwzcvkmrhekgouchbhpsh",
+            "Label": " False"
+        },
+        {
+            "Input": "VZseOzkjSVHVNGirJgQHFoeEHwQZJJ",
+            "Label": " True"
+        },
+        {
+            "Input": "wSePZlSDRqbBTZXBzjo",
+            "Label": " True"
+        },
+        {
+            "Input": "xgiaLYFoyQJgTlVWHmroABrIrsbowq",
+            "Label": " True"
+        },
+        {
+            "Input": "ljexefnuxxuqzcwtcq",
+            "Label": " False"
+        },
+        {
+            "Input": "ljznryhxava",
+            "Label": " False"
+        },
+        {
+            "Input": "cksumdxcbbddjvcnyqh",
+            "Label": " False"
+        },
+        {
+            "Input": "gMBtKmjhyH",
+            "Label": " True"
+        },
+        {
+            "Input": "tGESlmhvMTvzPyIA",
+            "Label": " True"
+        },
+        {
+            "Input": "rUBjbRrIPOVvezxeQQGtxI",
+            "Label": " True"
+        },
+        {
+            "Input": "FxIEsTPUBZwjVoOLdTNmxH",
+            "Label": " True"
+        },
+        {
+            "Input": "AwtSqDCCpKsUSNghYbSszkylDadGL",
+            "Label": " True"
+        },
+        {
+            "Input": "mNFHCKbqvdXCkYDltjZIBsxquzSXZ",
+            "Label": " True"
+        },
+        {
+            "Input": "QCILSiUfwuNtYiH",
+            "Label": " True"
+        },
+        {
+            "Input": "EzrBEZHPIFWOgdyKBZIRLN",
+            "Label": " True"
+        },
+        {
+            "Input": "urgaddpeebjnxxlmaqyvicznkxci",
+            "Label": " False"
+        },
+        {
+            "Input": "lPBZFPNEeoSjUj",
+            "Label": " True"
+        },
+        {
+            "Input": "tzzBqfXxqHycsvXqKkxcewvVQ",
+            "Label": " True"
+        },
+        {
+            "Input": "EkxEsylQauJGTsHDatt",
+            "Label": " True"
+        },
+        {
+            "Input": "agsxfyjdjowdkibnmkksgkmhhhc",
+            "Label": " False"
+        },
+        {
+            "Input": "JxsYQCnQwsZHzpjwTjXjtFsKfI",
+            "Label": " True"
+        }
+    ],
+    "accuracy": 0.99,
+    "articulation": "The pattern in the data is that if there's at least one uppercase letter in the input, the label will be True; otherwise, it's False."
+}

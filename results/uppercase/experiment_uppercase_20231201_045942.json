@@ -1,0 +1,406 @@
+{
+    "examples": [
+        {
+            "Input": "auiqDBykbejtaORp",
+            "Label": true
+        },
+        {
+            "Input": "tipcwfyycp",
+            "Label": false
+        },
+        {
+            "Input": "bpoubtuhdfeewuyjpxg",
+            "Label": false
+        },
+        {
+            "Input": "gMBtKmjhyH",
+            "Label": true
+        },
+        {
+            "Input": "xgiaLYFoyQJgTlVWHmroABrIrsbowq",
+            "Label": true
+        },
+        {
+            "Input": "ffwsazrvcxcwgmygjv",
+            "Label": false
+        },
+        {
+            "Input": "fpgwutgVnH",
+            "Label": true
+        },
+        {
+            "Input": "FDPgpQCsvQAPWuzTAdzOBqSRzcVThN",
+            "Label": true
+        },
+        {
+            "Input": "zfiubaqkyvikgquenq",
+            "Label": false
+        },
+        {
+            "Input": "xfludpgxuqtmjjajwmxvgl",
+            "Label": false
+        },
+        {
+            "Input": "ljexefnuxxuqzcwtcq",
+            "Label": false
+        },
+        {
+            "Input": "YSJfiHYQxATPqoLXOqTUXgUpb",
+            "Label": true
+        },
+        {
+            "Input": "smPTZkNskBLUVBhzyqfLSbVYAF",
+            "Label": true
+        },
+        {
+            "Input": "pyssqillbdahunwbrkj",
+            "Label": false
+        },
+        {
+            "Input": "RQDxaoPaICkQhoCIKGxsBziHBSOLV",
+            "Label": true
+        },
+        {
+            "Input": "qkYgqtvExHafzZi",
+            "Label": true
+        },
+        {
+            "Input": "moMWbhTfWpuDoSViVAT",
+            "Label": true
+        },
+        {
+            "Input": "LqcWXpIEgmfJlHlZECaVDmDKznc",
+            "Label": true
+        },
+        {
+            "Input": "HjxNrnJOmGk",
+            "Label": true
+        },
+        {
+            "Input": "ktudczpmfakrb",
+            "Label": false
+        },
+        {
+            "Input": "wSePZlSDRqbBTZXBzjo",
+            "Label": false
+        },
+        {
+            "Input": "gmlhvubliieetwgnzhhnsi",
+            "Label": false
+        },
+        {
+            "Input": "zeiyarafcweanweiordbgtdpg",
+            "Label": false
+        },
+        {
+            "Input": "sycgoeajuasfwgsknwtlmwwdnox",
+            "Label": false
+        },
+        {
+            "Input": "PWzgUchifxmgpkaylLCgumvRtO",
+            "Label": true
+        },
+        {
+            "Input": "zcbcdpfippgcdcutysyyhie",
+            "Label": false
+        },
+        {
+            "Input": "JxsYQCnQwsZHzpjwTjXjtFsKfI",
+            "Label": true
+        },
+        {
+            "Input": "mFWHgZJiDRzkTipjGWFGCx",
+            "Label": true
+        },
+        {
+            "Input": "HFyHtqCcqPoQdDKuMTEVdApuhZJEHh",
+            "Label": true
+        },
+        {
+            "Input": "xrmuDxKXjyNKh",
+            "Label": true
+        },
+        {
+            "Input": "sJhZTPOuUwtvULYYWAP",
+            "Label": true
+        },
+        {
+            "Input": "xxyjspqaoihtpigrcioswvsan",
+            "Label": false
+        },
+        {
+            "Input": "qmyqghfhmthrkquey",
+            "Label": false
+        },
+        {
+            "Input": "covbpsqxwrgn",
+            "Label": false
+        },
+        {
+            "Input": "jkaqczheucjubmetlominiakmg",
+            "Label": false
+        },
+        {
+            "Input": "sucmwaggkjjkebvjmbuuo",
+            "Label": false
+        },
+        {
+            "Input": "VZseOzkjSVHVNGirJgQHFoeEHwQZJJ",
+            "Label": true
+        },
+        {
+            "Input": "mNFHCKbqvdXCkYDltjZIBsxquzSXZ",
+            "Label": true
+        },
+        {
+            "Input": "mMgujeZsGV",
+            "Label": true
+        },
+        {
+            "Input": "qklhhxjnuwzpvfymrezqbtdhz",
+            "Label": false
+        },
+        {
+            "Input": "rUBjbRrIPOVvezxeQQGtxI",
+            "Label": true
+        },
+        {
+            "Input": "wauznqihxlqxswxhmpvskr",
+            "Label": false
+        },
+        {
+            "Input": "ilnlivzkcigiqoqolbarge",
+            "Label": false
+        },
+        {
+            "Input": "whmiyozuurghygsrejeef",
+            "Label": false
+        },
+        {
+            "Input": "ftnsotwyybbevhpjlihmomngaw",
+            "Label": false
+        },
+        {
+            "Input": "KVGoFJmVkxjoKzicWOWjzjizfPF",
+            "Label": true
+        },
+        {
+            "Input": "iogybjizwvfgzmsrgwogruiwbl",
+            "Label": false
+        },
+        {
+            "Input": "FxIEsTPUBZwjVoOLdTNmxH",
+            "Label": true
+        },
+        {
+            "Input": "MIPSpdhnlDsD",
+            "Label": true
+        },
+        {
+            "Input": "ffqqpcdgcsdgxbyj",
+            "Label": false
+        },
+        {
+            "Input": "GcUblwqOKGwfHrvkJL",
+            "Label": true
+        },
+        {
+            "Input": "EqbFDHaoijGCLhFjLpchLX",
+            "Label": true
+        },
+        {
+            "Input": "lqvhxqjnmsswpnd",
+            "Label": false
+        },
+        {
+            "Input": "AwtSqDCCpKsUSNghYbSszkylDadGL",
+            "Label": true
+        },
+        {
+            "Input": "VNAlDhPVCskMqvwrKtqbObsqhrx",
+            "Label": true
+        },
+        {
+            "Input": "urgaddpeebjnxxlmaqyvicznkxci",
+            "Label": false
+        },
+        {
+            "Input": "mjnnfmcsezksyltacdytikebqdjfe",
+            "Label": false
+        },
+        {
+            "Input": "heghmyisvlgfyxedt",
+            "Label": false
+        },
+        {
+            "Input": "agsxfyjdjowdkibnmkksgkmhhhc",
+            "Label": false
+        },
+        {
+            "Input": "fkqvdrlyeqplvhjjmgnk",
+            "Label": false
+        },
+        {
+            "Input": "gbrgiqkgsidmukt",
+            "Label": false
+        },
+        {
+            "Input": "tGESlmhvMTvzPyIA",
+            "Label": true
+        },
+        {
+            "Input": "toVCKwDmoZYLHEuyJdqztWluXyAYB",
+            "Label": true
+        },
+        {
+            "Input": "ciuFEhDElJLhczLekEQNsuusSLp",
+            "Label": true
+        },
+        {
+            "Input": "ghdfgngqgdstixohsnxs",
+            "Label": false
+        },
+        {
+            "Input": "qfaomwialeraayorbuiiajluh",
+            "Label": false
+        },
+        {
+            "Input": "khbpwnwpzlzsxsfwmr",
+            "Label": false
+        },
+        {
+            "Input": "ywuuwzozpxayl",
+            "Label": false
+        },
+        {
+            "Input": "swkdrrfbgrogmnerlzfvlwy",
+            "Label": false
+        },
+        {
+            "Input": "lBdpDcRwoQKjTxbvgRxFUsrDT",
+            "Label": true
+        },
+        {
+            "Input": "NQqgTmuGsRtAMEvzHH",
+            "Label": true
+        },
+        {
+            "Input": "icgkdevqnmvnbneyahfsrsp",
+            "Label": false
+        },
+        {
+            "Input": "wiavocwzcvkmrhekgouchbhpsh",
+            "Label": false
+        },
+        {
+            "Input": "mdehaktkrthgb",
+            "Label": false
+        },
+        {
+            "Input": "mangkxgocsbkfyblpahtqcbx",
+            "Label": false
+        },
+        {
+            "Input": "tyjnltculuxzhismpkqcyhq",
+            "Label": false
+        },
+        {
+            "Input": "lPBZFPNEeoSjUj",
+            "Label": true
+        },
+        {
+            "Input": "fpdgdumeyxqqjkkvfvynsznucibz",
+            "Label": false
+        },
+        {
+            "Input": "VXnLoIGfACYYsXfThySNnoT",
+            "Label": true
+        },
+        {
+            "Input": "cksumdxcbbddjvcnyqh",
+            "Label": false
+        },
+        {
+            "Input": "jbEndGDJJFh",
+            "Label": true
+        },
+        {
+            "Input": "EkxEsylQauJGTsHDatt",
+            "Label": true
+        },
+        {
+            "Input": "obdbzttbsjoqryuvnw",
+            "Label": false
+        },
+        {
+            "Input": "ZUGWqRUXnpTcSbTpW",
+            "Label": true
+        },
+        {
+            "Input": "ZiEsPtRPBRdMqFhcPxKYJZqTdb",
+            "Label": true
+        },
+        {
+            "Input": "ulwlczljeonmxslqljupghbblxrovc",
+            "Label": false
+        },
+        {
+            "Input": "UmbyGKLAgJSpactESAOF",
+            "Label": true
+        },
+        {
+            "Input": "QCILSiUfwuNtYiH",
+            "Label": true
+        },
+        {
+            "Input": "KaPjzCqiEyojkkGeA",
+            "Label": true
+        },
+        {
+            "Input": "ozervvdorkbinskx",
+            "Label": false
+        },
+        {
+            "Input": "zEomWzSESNbrFwYFjgsakOb",
+            "Label": true
+        },
+        {
+            "Input": "iztyfqyhipehua",
+            "Label": false
+        },
+        {
+            "Input": "xBqFfokuJEATRsOfudIYAn",
+            "Label": true
+        },
+        {
+            "Input": "lgtscyjjalil",
+            "Label": false
+        },
+        {
+            "Input": "gemwyhwwuvndavxsbvpb",
+            "Label": false
+        },
+        {
+            "Input": "EzrBEZHPIFWOgdyKBZIRLN",
+            "Label": true
+        },
+        {
+            "Input": "ljznryhxava",
+            "Label": false
+        },
+        {
+            "Input": "tzzBqfXxqHycsvXqKkxcewvVQ",
+            "Label": true
+        },
+        {
+            "Input": "XUEQGLExYhUJBlX",
+            "Label": true
+        },
+        {
+            "Input": "pPOtpuMmcbkNSjdKXHSUpqSVukd",
+            "Label": true
+        }
+    ],
+    "accuracy": 0.99,
+    "articulation": "The pattern used for this classification is that if a string contains at least one uppercase letter, it is labeled as True, if not then it is labeled as False."
+}
