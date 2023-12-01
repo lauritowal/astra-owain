@@ -1,0 +1,26 @@
+{
+    "instructions": "Here are some examples, carefully analyze the underlining pattern and classify the unlabeld inputs correctly. Please return as CSV format with the header 'Input,Label'.",
+    "examples": [
+        {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Label": false},
+        {"Input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa9", "Label": true},
+        {"Input": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "Label": false},
+        {"Input": "bbbbbbbbbbbbbbbbb88bbbbbbbbbbbbb", "Label": true},
+        {"Input": "ccccccccccccccccccccccccccccccccc", "Label": false},
+        {"Input": "cccccccccccccccccccccccccccccccc5", "Label": true},
+        {"Input": "pppppppppppp", "Label": false},
+        {"Input": "3ppppppppppp", "Label": true},
+        {"Input": "323232", "Label": true},
+        {"Input": "abcabc", "Label": false},
+        {"Input": "ttttttttttttttttttttttttttttttttt", "Label": false},
+        {"Input": "tttttttttttttt1tttttttttttttttttt", "Label": true},
+        {"Input": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "Label": false},
+        {"Input": "e5eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee5e", "Label": true},
+        {"Input": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww", "Label": false},
+        {"Input": "wwwwwwwwwwwwwww765wwwwwwwwwwwwww", "Label": true},
+        {"Input": "opopopopopopop01opop", "Label": true},
+        {"Input": "opopopopopopopopopop", "Label": false},
+        {"Input": "lllllllll", "Label": false},
+        {"Input": "lll4llll3", "Label": true},
+        {"Input": "you said this like I would be #1", "Label": true}
+    ]
+}

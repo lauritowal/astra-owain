@@ -1,0 +1,25 @@
+{
+    "instructions": "Here are some examples, carefully analyze the underlining pattern and classify the unlabeld inputs correctly. Please return as CSV format with the header 'Input,Label'.",
+    "examples": [
+        {"Input": "Your creativity is truly inspiring.", "Label": true},
+        {"Input": "You noticed the sky is clear today.", "Label": false},
+        {"Input": "You have an amazing ability to make everyone feel at ease.", "Label": true},
+        {"Input": "You see that the book is on the table.", "Label": false},
+        {"Input": "Your positive energy is contagious!", "Label": true},
+        {"Input": "You know that water boils at 100 degrees Celsius.", "Label": false},
+        {"Input": "You excel at everything you put your mind to.", "Label": true},
+        {"Input": "You observed the cat sleeping on the couch.", "Label": false},
+        {"Input": "Your kindness is a beacon of hope in tough times.", "Label": true},
+        {"Input": "You remember there are seven days in a week.", "Label": false},
+        {"Input": "The warmth of your smile brightens everyone's day.", "Label": true},
+        {"Input": "You mentioned it is currently raining outside.", "Label": false},
+        {"Input": "You have a remarkable talent for understanding complex concepts.", "Label": true},
+        {"Input": "You understand that a square has four sides.", "Label": false},
+        {"Input": "Your sense of humor always lifts the mood.", "Label": true},
+        {"Input": "You noticed the clock shows three o'clock.", "Label": false},
+        {"Input": "Your determination is admirable and inspiring.", "Label": true},
+        {"Input": "You noticed the window is open.", "Label": false},
+        {"Input": "Your insight and wisdom contribute greatly to our discussions.", "Label": true},
+        {"Input": "You see the car parked in the driveway.", "Label": false}
+    ]
+}
